@@ -22,7 +22,6 @@ int main(int argc, const char * argv[]) {
         
         CommandHandler *handler=[CommandHandler new];
         BOOL result=[handler runWithArguments:arguments];
-        [handler release];
         
         return result;
         

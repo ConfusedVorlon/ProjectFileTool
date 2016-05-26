@@ -62,7 +62,6 @@
         printf("%s\n",[path UTF8String]);
     }
     
-    [parser release];
     
     return 0;
 }

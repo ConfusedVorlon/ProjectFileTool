@@ -12,7 +12,7 @@
 
 @interface ProjectParser ()
 
-@property (retain) NSDictionary *plistObjects;
+@property (strong) NSDictionary *plistObjects;
 
 @end
 
@@ -142,7 +142,7 @@
             NSArray *children=[obj objectForKey:@"children"];
             if ([children containsObject:reference])
             {
-                NSDictionary *group=[[NSDictionary dictionaryWithObject:obj forKey:key] retain];
+                NSDictionary *group=[NSDictionary dictionaryWithObject:obj forKey:key];
                 *stop=YES;
                 foundGroup = group;
             }
@@ -151,7 +151,7 @@
     }];
     
     
-    return [foundGroup autorelease];
+    return foundGroup;
 }
 
 -(NSString*)groupPathForFileRef:(NSString*)reference

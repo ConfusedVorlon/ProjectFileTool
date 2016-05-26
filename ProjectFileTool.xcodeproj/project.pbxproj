@@ -303,6 +303,7 @@
 		D43A66FB1A66B38A000BD408 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				PRODUCT_NAME = ProjectFileTool;
 			};
 			name = Debug;
@@ -310,6 +311,7 @@
 		D43A66FC1A66B38A000BD408 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				PRODUCT_NAME = ProjectFileTool;
 			};
 			name = Release;
